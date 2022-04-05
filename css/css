@@ -1,0 +1,92 @@
+Q. how to add comments on css?
+ans- comments can be added by following ways-
+    1. sngle line comment //
+    2. multi line comment /*     */
+----------------------------------------------------------------------
+
+Q. Why do we use pseudo-class?
+
+ans. psedu class specify the special state of selected element.
+        example- p:hover{
+                    color : red;
+                }
+------------------------------------------------------------------------
+Q. How is specificity applied?
+ans- supoose two or more css is applied to an element. Then the selector which have higher specificity value
+    its style will be applied to the element.
+    example p{
+            color : red;
+            }
+            .test_class p{
+            color : green;
+            }
+
+            <p class="test_class">hello world</p>
+        so in this example text color will be green because class selector has higher priority.
+
+-----------------------------------------------------------------------
+Q. What method allows an element to be moved from its current position?
+ans- transform allow an element to be moved from its position. It rotate the
+    element clockwise from its current position.
+
+
+----------------------------------------------------------------------------
+Q. what properties does flex model have?
+--------------------------------------------------------------------
+
+
+Q. What are combinators? give examples of how you can use them?
+ans- It explains the relationship between the selector.
+    There are four different combinators-
+    - descendant selector (space)
+    -child selector (>)
+    -adjacent sibling selector (+)
+    -general sibling(~)
+
+---------------------------------------------------------------------------
+Q. What does object-fit do?
+ans-  object-fit property is used to specify how an image or video should be resized
+        syntax-
+                object-fit : fill | contain | cover | none
+
+-------------------------------------------------------------------------------------------
+Q. What does rotate do?
+ans- The rotate CSS property allows you to specify rotation transforms individually and 
+    independently of the transform property.
+
+
+    -------------------------------------------------------------------------------------------
+Q. What rule can be used to define animations?
+ans- animations lets an element gradually change from one style to another.
+    you can change the as many css propery you want as many times you want.
+    To use animation, you must first specify some keyframes for the animation.
+
+
+-----------------------------------------------------------------------------------
+Q.When working with attribute selectors, how can you select elements which contain a particular attribute value?
+ans-  The attribute selector is used to select element with a specified attribute.
+        ex-input[type="button"] {
+            width: 120px;
+            margin-left: 35px;
+            display: block;
+                }
+
+------------------------------------------------------------------
+Q. What does @media do?
+ans- @media is used in media query to apply different style for different
+        devices It is used to make pages responsive.
+
+
+--------------------------------------------------------------------------
+Q. What can be used to override properties of an element?
+ans- To override property of an element we can write !important .
+
+
+
+
+
+
+----------------------------------------------------------
+Q. how can we apply same styles to multiple selectors?
+ans- we can apply same style to mulitple selector by grouping them.
+        example- div, p { color: red; }
