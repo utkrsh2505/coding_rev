@@ -1,0 +1,107 @@
+Q. What is hoisting?
+ans . It is concept in js where we can access the values of 
+    variables and functions even before initializing them. 
+    ----------------------------
+Q. What is scoping?
+ans.  scoping can be defined as an accessibilty of variables.
+        JS has 3 types of scope--
+        1. Block scope.
+        2. Function Scope.
+        3. Global Scope.
+        Block Scope--
+                {
+                let x = 3;
+                }
+                it will give error X is not defined
+
+        Function Scope---
+                variable declared within function become local to the function.
+                    function a(){
+                        let x = 2;
+                        
+                    }
+        Global scope--
+                Function declared outside a function becomes GLOBAL.
+                    let a = 2;
+                    function myFunction(){
+                        // from here we can acess the a;
+                    }
+
+Q. How are var, let const different?
+ans. var is function scope 
+    we can redeclare and reinitilize the var
+
+    let is block scope
+    we can reinitilize but we cannot redeclare the let 
+
+    const is block scope 
+    const cannot be redeclare and reinitilize
+
+Q.What are the two main differences in arrow functions?
+ans.  arrow function donot  have their own this
+    argument object are not available in arrow function
+
+Q. Does Call apply bind work for arrow functions?
+Ans Call apply and bind dont work for arrow function because arrow function donot have their this
+
+
+Q.What does call apply bind do?
+ let obj={
+     let name = "utkarsh";
+    getName : function(age){
+        console.log(`${this.name} ${age})
+    }
+ }
+ let obj2 = {
+     let name = "vikas";
+
+ }
+ call
+ obj.getName.call(obj2, "23")
+
+ apply 
+
+ obj.getName.apply(obj2, ["23"])
+  bind
+
+  let display = obj.getName.bind(obj2, "23")
+   display()
+
+
+
+Q. What are closures?
+Ans- function with its lexixal environment
+
+ex- function a(){
+    let x =2;
+    function b(){
+        console.log(x)
+    }
+    return b;
+}
+
+let res = a()
+res()
+
+Q.What is event bubbling?
+ans when event happens on an element, it first runs the handlers on it then on its parent then all way on other ancestors
+
+Q.What is event loop?
+ans. As js is single  thread language event loop if there is any process in callback queue or not if there is process in callback queuse and callstack is empty then will move that
+    process from callback queue to callstack
+
+Q. Write a program to flatten an array
+arr.flat(infinity)
+
+Q. What is currying?
+
+function a(x){
+  
+    function b(y){
+        console.log(x+y)
+    }
+    return b;
+}
+
+var ans = a(2);
+ans(3)
