@@ -1,0 +1,37 @@
+Q. What is HTTP protocol?
+Ans. HTTP stands for Hyper Text Transfer Protocol.
+    It is an protocol to access the data on the WORLD
+    WIDE WEB.
+    HTTP can be used to transfer the data in the form of plain text,
+    hypertext,audio, video and so on.
+Q.What is TCP Protocol?
+Ans. TCP stands for Transmission Control Protocol. 
+    It is an transport layer protocol that facilitates the 
+    transmission of packets from source to destination.
+
+Q. Explain all the different HTTP methods?
+Ans. GET - Get is used to retrieve information from the server.
+
+    Head- Same as GET but transfers the status line and header section only.
+
+    POST- POST method is used to send data to the server.
+
+    PUT- Replace all the current information with the uploaded content.
+
+    DELETE-Removes all current representations of the target resources with the uploaded content.
+
+Q.What are HTTP headers?
+Ans. HTTP headers are the name or value pairs that are displayed in the request and response messages of message headers for Hypertext Transfer Protocol (HTTP).
+
+Q.What is polling?
+Ans.Polling, or polled operation, in computer science, refers to actively sampling the status of an external device by a client program as a synchronous activity. Polling is most often used in terms of input/output (I/O), and is also referred to as polled I/O or software-driven I/O.
+
+Q. What are web sockets?
+Ans- Web Socket is bidirectional, a full-duplex protocol that is used in the same scenario of client-server communication
+
+
+Q.What is HTTPS?
+Ans. Hypertext transfer protocol secure (HTTPS) is the secure version of HTTP, which is the primary protocol used to send data between a web browser and a website. HTTPS is encrypted in order to increase security of data transfer.
+
+Q.What is Cross Origin Resource Sharing? ( CORS ) Why do we need it?
+Ans. CORS stands for Cross-Origin Resource Sharing. It allows you to make requests from one website to another website in the browser, which is normally prohibited by another browser policy called the Same-Origin Policy (SOP).
