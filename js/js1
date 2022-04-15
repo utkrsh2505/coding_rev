@@ -104,4 +104,9 @@ function a(x){
 }
 
 var ans = a(2);
-ans(3)
+ans(3);
+----------------------------------------------
+Q. What is Event bubbling ?
+ event bubbling is an method of event propogtion . It is an process that starts
+ from an element that triggred the event ans then bubbles up to the containing element in
+the hierarchy.
