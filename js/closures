@@ -1,0 +1,29 @@
+What are IIFE?
+Ans. Functions, there are named functions, anonymous functions and then 
+there are Functions that are executed as
+ soon as they are mounted, these functions are 
+ known as Immediately Invoked Function Expressions or IIFEs.
+
+
+(function (){ 
+// Function Logic Here. 
+})();
+
+Q.What is currying?
+Ans. It is a technique in functional
+ programming, transformation of the
+  function of multiple arguments into 
+  several functions of a single argument
+  in sequence. 
+
+
+Q.Create a function called toggler using closures
+Ans. function toggler(x){
+    return function toggler1(y){
+        return function toggler2(z){
+            return (x+y+z);
+        }
+    }
+
+}
+
