@@ -1,0 +1,53 @@
+What is SQL Databases? What are some companies who uses Mongo, what type of applications are these?
+Ans. SQL stands for Structured Query Language
+    SQL lets you access and manipulate databases
+    SQL became a standard of the American National Standards
+     Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987
+Q. What is NoSQL Databases? What are some companies who uses Mongo, what type of applications are these?
+Ans. NoSQL databases are purpose built for specific data models and have flexible schemas 
+for building modern applications. NoSQL databases are widely recognized for their ease of development, 
+functionality, and performance at scale. This page includes resources to help you better understand NoSQL 
+databases and to get started.
+
+
+
+Q.What is the difference between SQL and NoSQL databases?
+RELATIONAL DATABASE MANAGEMENT SYSTEM (RDBMS).
+These databases have fixed or static or predefined schema
+These databases are not suited for hierarchical data storage.
+These databases are best suited for complex queries
+
+
+
+Non-relational or distributed database system.
+They have dynamic schema
+These databases are best suited for hierarchical data storage.
+These databases are not so good for complex queries
+
+
+
+
+What is an aggregate query in SQL?
+An aggregate function in SQL performs a calculation on multiple values and returns a single value. SQL provides many aggregate functions that include avg, count, sum, min, max, etc.
+ An aggregate function ignores NULL values when it performs the calculation, except for the count function.
+
+ Q.What are pipelines in aggregation?
+ Ans.Mongo aggregation pipeline work by using different operators such as $group, $match, $sort, $geoNear, etc. One of the efficient ways of grouping the multiple fields present inside the documents of MongoDB is by making the use of $group operator which helps in performing various other aggregation functions as well on the grouped data which is an aggregation pipeline.
+
+Q.What is the data structure used for indexing?
+B-tree is used for indexing
+
+
+Q.Are values sorted in indexes?
+The index sequence is based on the sort sequence. 
+
+Q.What are Replica Sets in MongoDB?
+Replication is the process of synchronizing data across multiple servers. Replication provides redundancy and increases data availability with multiple copies of data on different database servers. Replication protects a database from the loss of a single server. Replication also allows you to recover from hardware failure and service interruptions. With additional copies of the data, you can dedicate one to disaster recovery, reporting, or backup.
+
+
+Q.By default, which index is created by MongoDB for every collection?
+
+In documents, the _id field is a default index.
+
+Q.What are graph lookups?
+ Its is an extended version of $lookup and has enhanced capabilities which are used to perform a recursive search on a collection in an array with multiple values/fields.
