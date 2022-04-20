@@ -1,0 +1,96 @@
+Explain in brief what is node js?
+ans-Node.js is a server-side platform built on Google Chrome's JavaScript Engine (V8 Engine). 
+Node.js was developed by Ryan Dahl in 2009 and its latest version is v0.10.36. The definition of Node.js as supplied 
+by its official documentation is as follows −
+Node.js is a platform built on Chrome's JavaScript runtime for easily building fast and scalable network applications.
+Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive
+real-time applications
+
+
+Q.What is throughput?
+Ans-Throughput is the rate data is processed and transferred from one location to another. 
+In networking, it’s used to measure the performance—meaning speed—of hard drives and RAM along with internet 
+and network connections.
+Throughput is measured in bits per second or data per second.
+
+Q.What is the event loop?
+Ans-The event loop is the secret behind JavaScript’s asynchronous programming. 
+JS executes all operations on a single thread, but using a few smart data structures, 
+it gives us the illusion of multi-threading. Let’s take a look at what happens on the back-end.
+The call stack is responsible for keeping track of all the operations in line to be executed. 
+Whenever a function is finished, it is popped from the stack.
+The event queue is responsible for sending new functions to the stack for processing. 
+It follows the queue data structure to maintain the correct sequence in which all operations 
+should be sent for execution.
+
+What is process.tick?
+
+The process object is a one of the few global objects provided by the Node.js core API. It can be access from anywhere, thus its methods can also be accessed. Such is a method called process.nextTick() which is used by developers in realtime applications everyday to defer the execution of a function until the next Event Loop Iteration.
+Browser JavaScript introduced us functions like setTimeout() to defer tasks in the near future. The setTimeout() function takes a callback function and a number value representing the time after which the callback function will be executed, in milliseconds.
+
+
+
+What is the difference between setTimeout and setInterval?
+
+etTimeout( function, duration) − This function calls function after duration milliseconds from now. This goes for one execution. Let’s see an example −
+
+It waits for 2000 milliseconds, and then runs the callback function alert(‘Hello’) −
+
+setTimeout(function() {
+     alert('Hello');
+     }, 2000);
+setInterval(function, duration) − This function calls function after every duration milliseconds. This goes for unlimited times. Let’s see an example −
+
+It triggers the alert(‘Hello’) after every 2000 milliseconds, not only once.
+
+setInterval(function() {
+     alert('Hello');
+     }, 2000);
+
+
+
+
+Q.What are clusters?
+A cluster is a collection of stand-alone computers connected using some interconnection network. Each node in a cluster could be a workstation, personal computer, or even a multiprocessor system.
+A node is an autonomous computer that may be engaged in its private activities while at the same time cooperating with other units in the context of some computational task. Each node has its input/output systems and its operating system.
+When all nodes in a cluster have the same architecture and run the same operating system, the cluster is called homogeneous, otherwise, it is heterogeneous. The interconnection network could be a fast LAN or a switch.
+
+
+
+Q.What is the difference between readFile and readFileSync?
+Ans-The following code outputs the content of the index.html (it just contains the text hello world) to the browser. However, when I replace readFile() with readFileSync(), the request times out.
+
+Q.What are CORS? How do you configure them? Why do you need them?
+Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources. CORS also relies on a mechanism by which browsers make a "preflight" request to the server hosting the cross-origin resource, in order to check that the server will permit the actual request. In that preflight, the browser sends headers that indicate the HTTP method and headers that will be used in the actual request.
+
+
+What is rate limiting?
+Asn-ate limiting is a strategy for limiting network traffic. It puts a cap on how often someone can repeat an 
+action within a certain timeframe – for instance, trying to log in to an account. Rate limiting can help stop 
+certain kinds of malicious bot activity. It can also reduce strain on web servers.
+
+
+
+How does middlewares work in express?
+Middleware functions are functions that have access to the request object ( req ), the response object ( res ),
+and the next function in the application's request-response cycle. The next function is a function in the Express
+router which, when invoked, executes the middleware succeeding the current middleware.
+
+What is the difference between Encryption and Hashing?
+
+Encryption is the process of converting a normal readable message known as plaintext into a garbage message or not readable message known as Ciphertext. The ciphertext obtained from the encryption can easily be transformed into plaintext using the encryption key. Some of the examples of encryption algorithms are RSA, AES, and Blowfish.
+
+
+Hashing is the process of converting the information into a key using a hash function. The original information cannot be retrieved from the hash key by any means. Generally, the hash keys are stored in the database and they are compared to check whether the original information matches or not. They are generally used to store the passwords for login. Some of the examples of a hashing algorithm are MD5, SHA256.
+
+
+What is the difference between https and http?
+HTTPS is HTTP with encryption. The only difference between the two protocols is that HTTPS uses TLS (SSL) to encrypt normal HTTP requests and responses. As a result, HTTPS is far more secure than HTTP. A website that uses HTTP has http:// in its URL, while a website that uses HTTPS has https://.
+
+
+What is TLS?
+TLS is a cryptographic protocol that provides end-to-end security of data sent between applications 
+over the Internet. It is mostly familiar to users through its use in secure web browsing, and in particular
+the padlock icon that appears in web browsers when a secure session is established. However, it can and indeed
+should also be used for other applications such as e-mail, file transfers, video/audioconferencing, instant 
+messaging and voice-over-IP, as well as Internet services such as DNS and NTP.
